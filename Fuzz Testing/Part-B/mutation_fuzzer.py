@@ -2,12 +2,14 @@ from fuzzingbook.MutationFuzzer import MutationFuzzer
 import random
 import url_parser
 
-random.seed(2020)
-seed = "https://www.google.com"
+studentID = 40062066
+random.seed(studentID)
+print(f"Using student ID as seed: {studentID}")
+seed = "https://www.concordia.ca "
 mutation_fuzzer = MutationFuzzer([seed])
 
 valid_inputs = set()
-trials = 20
+trials = 40
 
 for i in range(trials):
     inp = mutation_fuzzer.fuzz()

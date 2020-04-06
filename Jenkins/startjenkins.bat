@@ -1,0 +1,2 @@
+bash startjenkins.sh
+pause
